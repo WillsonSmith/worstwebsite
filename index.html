@@ -1,1 +1,11 @@
-<style>html { background: linear-gradient(90deg,red, orange, yellow, green, indigo, blue, violet) }</style>
+<script type="text/javascript">
+  function rn() { return '#'+Math.floor(Math.random()*16777215).toString(16); }
+
+  document.body.innerHTML = `
+    <style>
+      html {
+        background: linear-gradient(90deg, ${rn()}, ${rn()}, ${rn()}, ${rn()}, ${rn()}, ${rn()}, ${rn()});
+      }
+    </style>
+  `;
+</script>
